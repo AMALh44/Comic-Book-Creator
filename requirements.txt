@@ -1,0 +1,7 @@
+flask
+transformers
+torch
+diffusers
+fpdf
+Pillow
+nltk

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Comic Creator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🖼️ AI Comic Book Creator</h1>
+        <form method="POST">
+            <label>📘 Comic Title:</label><br>
+            <input type="text" name="title" placeholder="Enter your comic title" required><br><br>
+
+            <label>🖊️ Enter Story:</label><br>
+            <textarea name="story" rows="10" placeholder="Type or paste your story here..." required></textarea><br>
+
+            <label>🎨 Choose Style:</label><br>
+            <select name="style">
+                <option value="cartoon">Cartoon</option>
+                <option value="noir">Noir</option>
+                <option value="anime">Anime</option>
+            </select><br><br>
+
+            <button type="submit">Generate Comic</button>
+        </form>
+    </div>
+</body>
+</html>
